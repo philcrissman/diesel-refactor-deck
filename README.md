@@ -58,3 +58,4 @@ Licensed under the [MIT license](https://github.com/imakewebthings/deck.js/blob/
 
 [![Gittip donate
 button](http://img.shields.io/gittip/imakewebthings.png)](https://www.gittip.com/imakewebthings/ "Donate weekly to this project using Gittip")
+
