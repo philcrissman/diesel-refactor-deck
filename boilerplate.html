@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=1024, user-scalable=no">
 
-  <title>Your deck.js Presentation</title>
+  <title>Refactoring Diesel</title>
 
   <!-- Required stylesheet -->
   <link rel="stylesheet" href="core/deck.core.css">
@@ -18,32 +18,231 @@
   <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
 
   <!-- Style theme. More available in /themes/style/ or create your own. -->
-  <link rel="stylesheet" media="screen" href="themes/style/web-2.0.css">
-
+  <!-- <link rel="stylesheet" media="screen" href="themes/style/web-2.0.css"> -->
+  <link rel="stylesheet" media="screen" href="themes/style/swiss.css">
   <!-- Transition theme. More available in /themes/transition/ or create your own. -->
-  <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+  <link rel="stylesheet" media="screen" href="themes/transition/fade.css">
 
   <!-- Basic black and white print styles -->
   <link rel="stylesheet" media="print" href="core/print.css">
 
   <!-- Required Modernizr file -->
   <script src="modernizr.custom.js"></script>
+
+  <style>
+    table.somedata td, table.somedata th {
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
   <div class="deck-container">
 
     <!-- Begin slides. Just make elements with a class of slide. -->
-
     <section class="slide">
-      <h1>Slide</h1>
+      <h1>Refactor You A Diesel For Great Good</h1>
     </section>
 
     <section class="slide">
-      <h1>Content</h1>
+      <h2>Refactoring A Diesel</h2>
+      <ul>
+        <li>
+          372 Commits
+        </li>
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h2>Refactoring A Diesel</h2>
+      <ul>
+        <li>
+          372 Commits
+        </li>
+        <li>
+          222 files changed
+        </li>
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h2>Refactoring A Diesel</h2>
+      <ul>
+        <li>
+          372 Commits
+        </li>
+        <li>
+          222 files changed
+        </li>
+        <li>
+          12,305 lines of code added
+        </li>
+      </ul>
     </section>
 
     <section class="slide">
-      <h1>Here</h1>
+      <h2>Refactoring A Diesel</h2>
+      <ul>
+        <li>
+          372 Commits
+        </li>
+        <li>
+          222 files changed
+        </li>
+        <li>
+          12,305 lines of code added
+        </li>
+        <li>
+          3,355 lines of code removed
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Refactoring A Diesel</h2>
+      <ul>
+        <li>
+          372 Commits
+        </li>
+        <li>
+          222 files changed
+        </li>
+        <li>
+          12,305 lines of code added
+        </li>
+        <li>
+          3,355 lines of code removed
+        </li>
+        <li>
+          SO FAR
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Refactoring A Diesel</h2>
+      <ul>
+        <li>
+          372 Commits
+        </li>
+        <li>
+          222 files changed
+        </li>
+        <li>
+          12,305 lines of code added
+        </li>
+        <li>
+          3,355 lines of code removed
+        </li>
+        <li>
+          SO FAR
+        </li>
+        <li>
+          ZOMG!!1
+        </li>
+      </ul>
+    </section>
+    <section class="slide">
+      <h2>Refactoring A Diesel</h2>
+      <h3>Tests?</h3>
+      <ul>
+      </ul>
+
+    </section>
+
+    <section class="slide">
+      <h2>Refactoring A Diesel</h2>
+      <h3>Tests?</h3>
+      <table class="somedata">
+        <tr>
+          <th>develop</th>
+        </tr>
+        <tr>
+          <td>
+            498 Tests
+          </td>
+        </tr>
+        <tr>
+          <td>
+            1366 Assertions
+          </td>
+        </tr>
+
+      </table>
+
+    </section>
+
+    <section class="slide">
+      <h2>Refactoring A Diesel</h2>
+      <h3>Tests?</h3>
+      <table class="somedata">
+        <tr>
+          <th>develop</th><th>feature/data-source-refactor</th>
+        </tr>
+        <tr>
+          <td>
+            498 Tests
+          </td>
+          <td>
+            827 Tests
+          </td>
+        </tr>
+        <tr>
+          <td>
+            1366 Assertions
+          </td>
+          <td>
+            1703 Assertions
+          </td>
+        </tr>
+
+      </table>
+
+    </section>
+
+    <section class="slide">
+      <h2>Refactoring A Diesel</h2>
+      <h3>TODO</h3>
+    </section>
+
+    <section class="slide">
+      <h2>Refactoring A Diesel</h2>
+      <h3>TODO</h3>
+      <pre>
+  > grep -rn TODO app lib test | awk '{print $1}' | awk 'BEGIN {FS=":";OFS=""};{print "git blame -L ",$2,",",$2," -- ",$1}'| while read line; do eval $line; done | awk '{print $2,$3}' | sed 's|(||g' | sort | uniq -c | sort
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Refactoring A Diesel</h2>
+      <h3>TODO (develop)</h3>
+      <pre>
+  > grep -rn TODO app lib test | awk '{print $1}' | awk 'BEGIN {FS=":";OFS=""};{print "git blame -L ",$2,",",$2," -- ",$1}'| while read line; do eval $line; done | awk '{print $2,$3}' | sed 's|(||g' | sort | uniq -c | sort
+   1 Nick Marrone
+   2 Daniel Worthington
+   3 Ken Harris
+   7 Jeff Croft
+  16 Dusty Jewett
+  17 Jeff Jolma
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Refactoring A Diesel</h2>
+      <h3>TODO (feature/data-source-refactor)</h3>
+      <pre>
+  > grep -rn TODO app lib test | awk '{print $1}' | awk 'BEGIN {FS=":";OFS=""};{print "git blame -L ",$2,",",$2," -- ",$1}'| while read line; do eval $line; done | awk '{print $2,$3}' | sed 's|(||g' | sort | uniq -c | sort
+   2 Daniel Worthington
+   3 Ken Harris
+   7 Jeff Croft
+  15 Jeff Jolma
+  16 Dusty Jewett
+  32 Nick Marrone
+  42 Phil Crissman
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h1>Thank You!</h1>
     </section>
 
     <!-- End slides. -->
